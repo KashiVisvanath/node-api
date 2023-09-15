@@ -15,13 +15,10 @@ jobs:
         steps :
             - uses: actions/checkout@v3
 
-            - name: run a one line script
-              run: echo Hello,world
-
-            - name: run a multi line script
+            - name: npm install ,build and test
               run: |
-                echo Add other actions
-                echo test , deploy your project
+                npm install
+                npm run build
 
            
                 
